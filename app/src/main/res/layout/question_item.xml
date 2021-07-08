@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="5dp"
+    tools:ignore="HardcodedText"
+    app:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_to_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:layout_marginEnd="10dp">
+
+                <com.shenzhe.answerquestion.view.RoundImageView
+                    android:id="@+id/image_question_avatar"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/nav_icon"
+                    android:layout_marginEnd="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_question_authorname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="用户名"
+                        android:textColor="#292828"
+                        android:textSize="18sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/tv_ask_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="发布于 2018-02-28 23:10:51" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_question_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="这是标题"
+                android:textColor="#000"
+                android:textSize="19sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_question_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="5"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:text="blablablablablablablablablablablablablablablablablablablablabla........."
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/image_preview"
+                    android:background="@drawable/bg_dialog"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="105dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nav_icon"
+                    android:visibility="gone"
+                    android:layout_marginRight="5dp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:visibility="gone"
+                android:id="@+id/scroll_question_image_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/question_image_1"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="110dp"
+                        android:minWidth="120dp"
+                        android:scaleType="fitXY" />
+<!--                    <ImageView-->
+<!--                        android:id="@+id/question_image_2"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:minHeight="110dp"-->
+<!--                        android:minWidth="120dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/nav_icon"/>-->
+<!--                    <ImageView-->
+<!--                        android:id="@+id/question_image_3"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:minHeight="110dp"-->
+<!--                        android:minWidth="120dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/nav_icon"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/question_image_4"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:minHeight="110dp"-->
+<!--                        android:minWidth="120dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/nav_icon"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/question_image_5"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:minHeight="110dp"-->
+<!--                        android:minWidth="120dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/nav_icon"-->
+<!--                        android:visibility="gone" />-->
+                </LinearLayout>
+            </ScrollView>
+
+
+            <TextView
+                android:id="@+id/tv_question_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:text="于2018-02-22  23:27更新"
+                android:textSize="13sp"
+                android:layout_marginStart="12dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:background="#6d8e8b8b" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image_question_comment"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_comment" />
+
+                    <TextView
+                        android:id="@+id/tv_question_answer_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_question_exciting"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_exciting" />
+
+                    <TextView
+                        android:id="@+id/tv_question_exciting_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_question_naive"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_naive" />
+
+                    <TextView
+                        android:id="@+id/tv_question_naive_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="5"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_question_favorite"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_favorite" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

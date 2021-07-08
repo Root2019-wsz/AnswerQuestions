@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auto_login">自动登录</string>
+    <string name="remember_passwd">记住密码</string>
+    <string name="login">登   录</string>
+    <string name="hint_account">账号(2-10个字符)</string>
+    <string name="hint_passwd">密码(6-18个字符)</string>
+    <string name="account">还没账号?</string>
+    <string name="sign_up">注   册</string>
+    <string name="app_name">邮问有答</string>
+    <string name="answer_question">有问题就会有答案</string>
+    <string name="passwd_again">请再次输入密码</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确认</string>
+    <string name="set_new_avatar">设置新头像</string>
+    <string name="no_more">没有更多了...</string>
+    <string name="homepage">主页</string>
+    <string name="favorite">收藏</string>
+    <string name="account_manage">收藏管理</string>
+    <string name="change_avatar">修改头像</string>
+    <string name="change_passwd">修改密码</string>
+    <string name="logout">退出登录</string>
+    <string name="hint_input_tittle">请输入标题</string>
+    <string name="hint_question">添加问题的补充说明</string>
+    <string name="hint_wite_answer">写回答</string>
+    <string name="choose_avatar">选择头像</string>
+    <string name="send">发送</string>
+</resources>
